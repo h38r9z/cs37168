@@ -1,1 +1,36 @@
-# cs37168
+java c
+Macroeconomics   Coursework   Assignment
+Consider   a   discrete-time   infinite-horizon   real   business   cycle   (RBC)   model   aug-   mented   for   investment   shocks.       The    economy    features    two    agents:       i)    a    rep-   resentative   household   who   consumes,   supplies   physical   capital   to   the   firm   (i.e.,   invests), supplies   labor   to   the firm, and   receives   the   firm's   profits   (if   positive);   ii)   a   representative   firm   that   rents   capital   and   demands   labor   from   the   household and   pays   the   householdís   wage   and   capital   incomes.
+The   representative   household   derives   utility   from   consumption   (Ct   )   and   ex-   periences   disutility   associated   with   labor   (Nt   )   according   to   the   following   sepa-   rable   lifetime   utility   function:
+
+
+where   E0      represents   the   expectations   operator,   0   <   β    <   1   is   the   householdís   discount factor,   and   b   > 0 is the   constant weight   attached   to   the   disutility   from   labor.
+The   household   supplies   labor   Nt      to   the   firm   and   receives   its   wage   bill   WtNt   ;   with   Wt    representing   the   wage   rate.   Denoting   Kt    as   the   existing   capital   stock,   rt    as the rental rate on   capital,   and   It      as   the   total   capital   investment   spending,   the   householdís   budget   constraint   is:
+Ct   +   It      ≤ WtNt   +   rt   Kt   :                                                                                                                           (2)
+Physical   capital   evolves   according   to:
+Kt+1      =   (1 — δ)   Kt   +   μt   It   ;                                                                                                                     (3)
+where   0   < δ   <   1   is   the   capital   depreciation   rate.    The   shock   μt      to   the   marginal e¢   ciency   of   investment   represents   an   exogenous   disturbance   to   the   process   by   which investment goods are transformed into installed   capital   to   be   used   in   pro-   duction   (e.g.,   Greenwood,   Hercowitz,   and   Hu§man   1988;   Justiniano,   Primiceri,   and   Tambalotti   2010,   2011).       The   shock   μt      follows   an   auto-regressive   AR(1)   process:
+μt   = (μt   -   1   )Pμ    exp   (sdμ   ."t(μ)) ;                                                                                                                  (4)
+with   0   <   Pμ      <   1   denoting   a   persistence   (auto-correlation)   parameter,   and   "t(μ)   are   random   mean-zero,   serially-uncorrelated   white-noise   shocks   with   a   constant standard   deviation   sdμ    > 0.
+Finally,   the   firm   produces   output   according to   a   standard   constant-returns-   to-scale   (CRS)   production   function:
+Yt      = At   Kt(α)Nt1   -α:                                                                                                                                          (5)
+where   At         is   a   total   factor   productivity      (TFP)   shock   that   follows   an      AR (1)   process   and   satisfies   A   =   1   in   steady   state.
+Please   Answer   the   Following   Questions:
+1.      Taking   the   investment   tax   rate,    the   wage   rate,    and   the   rental   rate   of capital as given, formulate the householdís   dynamic   optimization   problem   and   calculate   the   first-order   conditions   with   respect   to   Ct   ;   Kt+1   ;   and   Nt   :   Define   λt      as   the   Lagrange   multiplier   on   the   householdí代 写Macroeconomics Coursework AssignmentMatlab
+代做程序编程语言sbudget   constraint (2)   in   the   optimization   problem   and   substitute   (3)   in   (2)   for   It.   What   is   the   marginal   utility   of   consumption   and   how   is   it   related   to   the   interest   rate   rt      and   the   investment   shock   μt?      Explain   the   Euler   equation   with   respect   to   the   physical   capital   stock.
+2.      The   firm   maximizes   its   profit   function   Πt    = At   Kt(α)Nt1   -α    — WtNt      — rt   Kt   :
+Explain   the   profit   function   and   calculate   the   firm's   first-order   conditions with respect to Nt    and Kt    taking input prices Wt    and rt    as given.   Explain   the intuition behind the optimality conditions and why the firm earns zero   profits   in equilibrium.   In particular,   show that   WtNt   + rt   Kt    = Yt   :
+3.    Combining      (2),    (3),    (5),    and   the   firm's    zero   profit   condition   derived   in question   (2),   derive   and   explain   the   economyís   market   clearing   condition.
+4.   Write down and explain the   general   equilibrium   conditions   of an   economy   with   TFP   and   investment   shocks.   .
+5.      Derive   the   steady   state   equilibrium   conditions   of   the   model.   In   the   steady state   you   may   assume   that   there   are   no   investment   shocks, i.e., μt    = μ   =   1.   Explain   your   answer.
+6.    Assume   that   the   parameters   of   the   investment   shock   are   set   to   Pμ    = 0:95   and      sdμ       =    0:01.          Simulate      the      model      following      a      1%    drop      in      μt   :    On the   same   graph,   compare   the   model-implied   dynamics   of this   investment   shock   with   those   resulting   from   a   1%   fall   in   At   :   Set   the   TFP   persistence parameter      and   standard   deviation   to      PA         =    0:95    and      sdA            =    0:01,    re-   spectively.   All   other   structural   parameters   should   remain   consistent   with   those   used   in   the   baseline   RBC   simulations   from   the   lecture   slides   and   the   RBC_Basic.mod   file.       Discuss   the   general   equilibrium   e§ects   of   each shock,   and   explain   the   transmission   channels   involved.    For   the   purpose   of displaying   your   results,   please   simulate   the   log-linear   annualized   dynam-ics   of   Output,   Consumption,   Investment,   Capital,   Labour,   MPK,   Interest
+Rate,      Wage    Rate,    and    the    Investment    /    TFP    Shock      (a    3x3      display      in   the   display   matlab   file)   .    Read    Greenwood    et   al.      (1988);    Justiniano   et   al.   (2010,   2011);   Brinca   et   al.    (2016)   to   build   further   intuition.
+7.    Compare   the   modelís   standard   deviations   of   (log)   output,    (log)    invest-   ment,   and   (log) consumption   following a TFP shock   and   a   combination   of   TFP   and   investment   shocks   to   their   U.S.   data   counterparts   from   1970:Q1   to   2020:Q1,   obtained   from   Federal   Reserve   Economic   Data   (FRED)   pro-   vided   by   the   St.      Louis   Fed.      Ensure   that   the   empirical   data   series   are converted   to   quarterly   percentage   changes   to   align   with   the   logarithmic   model   variables.      Create   a   simple   table   showing   the   standard   deviations for   the   data,   TFP   shock,   and   TFP   +   investment   shocks.    Which   model   better   explains   the   variability   of the   key   variables   in   the   data?
+
+
+   
+
+
+
+         
+加QQ：99515681  WX：codinghelp  Email: 99515681@qq.com
